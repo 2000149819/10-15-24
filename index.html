@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Data Types</title>
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+        <script>
+            var a=8;
+            var b=10
+            var c=10;
+            var d=null;
+            var e;
+            document.write("a and b are equal: "+ (a==b));
+            document.write("<br>");
+            document.write("b and c are equal: "+(b==c));
+            document.write("<br>")
+            document.write("value of d: "+d);
+            document.write("<br>")
+            document.write("value of e: "+e);
+        </script>
+    </body>
+</html>
+<html>
+    <head>
+        <title>If Conditional</title>
+    </head>
+    <body>
+        <h1>If Conditional</h1>
+        <p>Write your favorite fruit</p>
+        <input type="text" id="ff">
+        <button onclick="favfruit()">Click Here</button>
+        <p id="result"></p>
+        <script>
+            var number=10;
+            if (number<=9){
+                document.write("hi")
+            }
+            else{
+                document.write("hello ")
+            }
+            function favfruit(){
+
+            
+            var fruit=document.getElementById("ff").value;
+            if (fruit==="apple"){
+                document.getElementById("result").innerHTML=("red is your favorite color")
+            }
+            else if (fruit==="mango"){
+                document.write("your favorite color is green")
+            }
+            else if (fruit==="orange"){
+                document.write("your favorite color is orange")
+            }
+            else if (fruit==="grapes"){
+                document.write("your favorite color is black")
+            }
+            else{
+                document.write("try again")
+            }
+        }
+        </script>
+    </body>
+</html>
